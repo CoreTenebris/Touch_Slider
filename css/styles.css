@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    background-color:rgb(27, 26, 26);
+    color:blanchedalmond;
+}
+
+
+.mainheader{
+    font-family:"batmanforeveralternate";
+    color:rgb(10, 252, 252);
+    font-style: italic;
+    text-align:center;
+    margin-top:35px;
+    font-size:large;
+}
+
+
+
+.slide-container{
+    margin-top: 0;
+    height: 100vh;
+    display:inline-flex;
+    overflow:hidden;
+    transform:translateX(0);
+    transition: transform 0.3s ease-out;
+    cursor:grab;
+    
+}
+
+
+.slide{
+    max-height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:0rem;
+    user-select:none;
+     
+}
+
+.slide img{
+    max-width:100%;
+    max-height:60%;
+    transition: transform 0.3s ease-out;
+
+}
+
+
+
+.slide h2{
+    font-size:2.5rem;
+    margin-bottom:0.5rem;
+}
+
+.slide h4{
+    font-size:23px;
+    padding-bottom:10px;
+}
+
+.btn{
+    background-color: rgb(118, 244, 248);
+    padding:10px 15px;
+    margin:15px;
+    text-decoration: none;
+    border-radius: 15px;
+    color:#000; 
+}
+
+.btn:hover{
+    background-color: rgb(247, 105, 10);
+    color:black;
+}
+
+.grabbing{
+    cursor:grabbing;
+}
+
+.grabbing .slide img{
+    transform:scale(0.9);
+
+}
